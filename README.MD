@@ -10,7 +10,6 @@ This repository contains the source code for a blog application build in Flask. 
   - [Installation](#installation)
 - [Usage](#usage)
 - [Styling](#styling)
-- [License](#license)
 
 ## Features
 
@@ -46,6 +45,3 @@ cd FLASK-Project
 
 - Feel free to style the application as desired, but ensure that all functionality remains intact.
 
-### License
-
-- This project is licensed under the MIT License.

@@ -1,0 +1,21 @@
+<!-- templates/blog/view.html -->
+{% extends 'base.html' %} {% block header %}
+<h1>{{ post['title'] }}</h1>
+{% endblock %} {% block content %}
+<p class="body">{{ post['body'] }}</p>
+
+<p>Likes: {{ post['likes'] }} Dislikes: {{ post['dislikes'] }}</p>
+
+<h2>Comments:</h2>
+<ul>
+  {% for comment in post['comments'] %}
+  <li>{{ comment.author.username }}: {{ comment.text }}</li>
+  {% endfor %}
+</ul>
+
+<form method="post" action="{{ url_for('blog.add_comment', id=post.id) }}">
+  <label for="comment_text">Add Comment:</label>
+  <input type="text" name="comment_text" required />
+  <button type="submit">Submit</button>
+</form>
+{% endblock %}

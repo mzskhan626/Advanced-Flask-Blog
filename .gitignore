@@ -1,0 +1,28 @@
+# .gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Virtual Environment
+venv/
+env/
+
+# IDE files
+.idea/
+.vscode/
+
+# Compiled files
+*.pyc
+*.pyo
+*.pyd
+
+# Dependency directories
+env/
+lib/
+lib64/
+__pycache__/
+
+# Local configuration file (replace with the appropriate file if needed)
+config.py
